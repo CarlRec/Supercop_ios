@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <link rel="stylesheet" href="popup.css">
+    <script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="logo"></div>
+    <div class="item_info">
+        <ul class="list-inline">
+            <li id="size" class="size-title">Size:</li>
+            <li id="sm" value="Small" class="size">SM</li>
+            <li id="md" value="Medium" class="size">MD</li>
+            <li id="lg" value="Large" class="size">LG</li>
+            <li id="xl" value="XLarge" class="size">XL</li>
+        </ul>
+
+        <ul class="list-inline">
+            <li id="shoesize" class="size-title">Shoe Size:</li>
+            <!--<li><input type="text" id="shoes"></li>-->
+            <select id="shoes" class="hat_size">
+			 <option value=""> </option>
+                <option value="8">8</option>
+                <option value="8.5">8.5</option>
+                <option value="9">9</option>
+                <option value="9.5">9.5</option>
+                <option value="10">10</option>
+                <option value="10.5">10.5</option>
+                <option value="11">11</option>
+                <option value="11.5">11.5</option>
+                <option value="12">12</option>
+                <option value="12.5">12.5</option>
+                <option value="13">13</option>
+                <option value="13.5">13.5</option>
+                <option value="14">14</option>
+                <option value="US 8.5 / UK 7.5">US 8.5 / UK 7.5</option>
+                <option value="US 9 / UK 8">US 9 / UK 8</option>
+                <option value="US 9.5 / UK 8.5">US 9.5 / UK 8.5</option>
+                <option value="US 10 / UK 9">US 10 / UK 9</option>
+                <option value="US 10.5 / UK 9.5">US 10.5 / UK 9.5</option>
+                <option value="US 11 / UK 10<">US 11 / UK 10</option>
+                <option value="US 11.5 / UK 10.5">US 11.5 / UK 10.5</option>
+                <option value="US 12 / UK 11">US 12 / UK 11</option>
+
+            </select>
+        </ul>
+
+        <ul class="list-inline">
+            <li class="size-title">Hat Size:</li>
+            <select id="hat_size" class="hat_size">
+			    <option value=""> </option>
+                <option value="7 1/8">7 1/8</option>
+                <option value="7 1/4">7 1/4</option>
+                <option value="7 3/8">7 3/8</option>
+                <option value="7 1/2">7 1/2</option>
+                <option value="7 5/8">7 5/8</option>
+                <option value="7 3/4">7 3/4</option>
+                <option value="S/M">S/M</option>
+                <option value="M/L">M/L</option>
+                <option value="M/L">L/XL</option>
+            </select>
+        </ul>
+        <div class="s_area">
+            <div class="keyblock">
+         <span class="small" id="kflabel">KEYWORD FINDER: <input type="checkbox" id="kfswitch"/>
+                 <label for="kfswitch">
+                     <span class="ui"></span>
+                 </label>
+             </span>
+            </div>
+            <div class="kware">
+                <input type="text" id="keyword">
+
+                <div class="color">
+                    <label for="item_color">Color:</label> <input type="text" id="item_color" placeholder="optional"></div>
+            </div>
+                 <span class="small">AUTO ADD TO CART: <input type="checkbox" id="if_auto_cart"/>
+                     <label for="if_auto_cart">
+                         <span class="ui"></span>
+                     </label>
+                     <br/>
+                 </span>
+           
+
+
+
+            <span class="small">COMPLETE CHECKOUT: <input type="checkbox" id="if_one_click"/><label
+                    for="if_one_click"><span class="ui"></span></label></span>
+            <button id="sb">Save</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>

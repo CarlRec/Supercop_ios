@@ -1,0 +1,28 @@
+{
+    "name": "Supreme Supercop",
+    "description": "Supercop is registered to your name and email - each copy is unique",
+    "version": "3.6.1",
+    "manifest_version": 2,
+    "permissions": ["storage", "tabs", "*://*.supremenewyork.com/shop/*"],
+    "background": {
+        "scripts": ["background.js"]
+    },
+    "homepage_url": "http://supercopbot.com/",
+    "content_scripts": [
+        {
+            "matches": ["*://*.supremenewyork.com/shop", "*://*.supremenewyork.com/shop/all"],
+            "js": ["key_finder.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "128": "images/icon.png"
+    },
+    "options_page": "options.html",
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_title": "Supreme Supercop",
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'"
+}

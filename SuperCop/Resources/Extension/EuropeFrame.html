@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="options.css">
+    <style type="text/css">
+        body {
+            background: transparent;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="form-group">
+        <label>Name:</label>
+        <input id="name" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>Email:</label>
+        <input id="email" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>Telephone:</label>
+        <input id="tel" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>Address:</label>
+        <input id="street" type="text" class="">
+
+    </div>
+    <div class="form-group">
+        <label></label>
+        <input id="street2" type="text" class="">
+
+    </div>
+    <div class="form-group">
+        <label></label>
+        <input id="street3" type="text" class="">
+
+    </div>
+    <div class="form-group">
+        <label>Zip Code:</label>
+        <input id="zip" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>City:</label>
+        <input id="city" type="text" class="">
+    </div>
+    <!--<div class="form-group">-->
+    <!--<label>State:</label>-->
+    <!--<input id="state" type="text" class="">-->
+    <!--</div>-->
+    <div class="form-group">
+        <label>Country[initials]: </label>
+        <input id="u_country" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>Card:</label>
+        <ul id="card" class="list-inline">
+            <li id="visa" value="visa" class="card">VISA</li>
+            <li id="ae" value="american_express" class="card">AMERICAN-EXPRESS</li>
+            <li id="master" value="master" class="card">MASTERCARD</li>
+            <li id="solo" value="solo" class="card">SOLO</li>
+            <li id="paypal" value="paypal" class="card" style="margin-left: 180px; margin-top: 10px">PAYPAL</li>
+        </ul>
+        <div id="cardInfo">
+            <div class="form-group">
+                <label>Card Number:</label>
+                <input id="c_num" type="text" class=" ">
+            </div>
+            <div class="form-group">
+                <label>CVV:</label>
+                <input id="cvv" type="text" class=""></label>
+            </div>
+            <div class="form-group">
+                <label>Expiration Month[mm]:</label>
+                <input id="exp_month" type="text" class="">
+            </div>
+            <div class="form-group">
+                <label>Expiration Year[yyyy]:</label>
+                <input id="exp_year" type="text" class="">
+            </div>
+
+        </div>
+        <div class="save">
+            <button type="button" id="sb">Save Info</button>
+            <button type="button" id="clear" style="display: none">Clear Saved Info</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="EuropeFrame.js"></script>
+</body>
+</html>

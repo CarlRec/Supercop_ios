@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<meta lang="utf-8">
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="options.css">
+    <style type="text/css">
+        body {
+            background: transparent;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="form-group">
+        <label>名前:</label>
+        <input id="lName" type="text" class="" placeholder="Last Name">
+        <input id="fName" type="text" class="" placeholder="First Name">
+    </div>
+    <!--<div class="form-group">-->
+    <!--<label>First Name:</label>-->
+    <!--<input id="fName" type="text" class="">-->
+    <!--</div>-->
+    <div class="form-group">
+        <label>Eメール:</label>
+        <input id="email" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>電話番号:</label>
+        <input id="tel" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>都道府県:</label>
+        <input id="state" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>区市町村:</label>
+        <input id="city" type="text" class="">
+    </div>
+    <div class="form-group">
+        <label>住所:</label>
+        <input id="street" type="text" class="">
+
+    </div>
+    <div class="form-group">
+        <label>郵便番号:</label>
+        <input id="zip" type="text" class="">
+    </div>
+
+
+    <div class="form-group">
+        <label>支払い方法:</label>
+        <ul id="card" class="list-inline">
+            <li id="visa" value="visa" class="card">VISA</li>
+            <li id="ae" value="american_express" class="card">AMERICAN-EXPRESS</li>
+            <li id="master" value="master" class="card">MASTERCARD</li>
+            <li id="cod" value="cod" class="card">COD</li>
+        </ul>
+        <div id="cardInfo">
+            <div class="form-group">
+                <label>カード番号:</label>
+                <input id="c_num" type="text" class=" ">
+            </div>
+            <div class="form-group">
+                <label>CVV番号:</label>
+                <input id="cvv" type="text" class=""></label>
+            </div>
+            <div class="form-group">
+                <label>有効期限 月[mm]:</label>
+                <input id="exp_month" type="text" class="">
+            </div>
+            <div class="form-group">
+                <label>有効期限 年[yyyy]:</label>
+                <input id="exp_year" type="text" class="">
+            </div>
+
+        </div>
+        <div class="save">
+            <button type="button" id="sb">Save Info</button>
+            <button type="button" id="clear" style="display: none">Clear Saved Info</button>
+        </div>
+    </div>
+</div>
+<script type="text/javascript" src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript" src="JapanOptions.js"></script>
+</body>
+</html>
